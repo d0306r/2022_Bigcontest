@@ -14,7 +14,7 @@ def main() :
     st.subheader("1. 숙박🏨")
 
     #주소별 온실가스 배출량 불러오기
-    df = pd.read_csv('source/TB_ECO_BUILDING_GHG_GIS_JEJU_1920.csv', thousands=',', encoding='euc-kr')
+    df = pd.read_csv('TB_ECO_BUILDING_GHG_GIS_JEJU_1920.csv', thousands=',', encoding='euc-kr')
 
     #sum 배출량만 남기고 제거
     df_new = df
@@ -24,7 +24,7 @@ def main() :
     df_new = df_new.drop('LTNO_ADDR', axis=1)
 
     #2022년 숙박 자료만 남기고 제거
-    df_3 = pd.read_csv('source/JT_MT_ACCTO_TRRSRT_SCCNT_LIST.csv', thousands=',', encoding='cp949')
+    df_3 = pd.read_csv('JT_MT_ACCTO_TRRSRT_SCCNT_LIST.csv', thousands=',', encoding='cp949')
     df_3_drop = df_3[df_3['BASE_YEAR'] ==2021].index
     df_3.drop(df_3_drop, inplace=True)
     df_3_drop_2 = df_3[df_3['CL_CD'] != 'c3'].index
