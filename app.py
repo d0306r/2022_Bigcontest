@@ -85,7 +85,7 @@ def main() :
         
 
     #항공
-    sum_airplane = Decimal('0.128') * 2
+    sum_airplane = Decimal('0.128') * 2 * 459
 
 
     #이동수단 
