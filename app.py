@@ -67,7 +67,7 @@ def main() :
             st.session_state[resort_name_list[j]] = resort_name_list[j]
 
         accomodation = st.text_input("%d번째로 이용한 숙소 명을 정확히 입력하세요 " % j, key = resort_name_list[j], help='현재 입력된 숙소 명은 예시입니다.')
-        cnt_rooms_total = st.number_input("%d번째로 이용한 숙소의 총 객실 수를 입력하세요 " % j, 1, 500)
+        cnt_rooms_total = st.number_input("%d번째로 이용한 숙소의 총 객실 수를 입력하세요 " % j, 1, 500, help='https://kr.trip.com/ 링크를 참고하세요.')
         cnt_rooms = st.number_input("%d번째로 이용한 숙소에서 사용하는 방의 개수를 입력하세요 " % j, 1, 500)
 
         if resort_replaced.loc[accomodation]['SUM_CO2'] == 0.272700 :
