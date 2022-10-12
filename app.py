@@ -109,7 +109,7 @@ def main() :
             sum_car = Decimal(0.1219) * Decimal(distance_car)
 
     else :
-        use_trans = st.number_input ("여행 전체에서 교통수단을 몇 번 이용했나요? ", 1, 100)
+        use_trans = st.number_input ("여행 전체에서 교통수단을 몇 종류 이용했나요? ", 1, 100)
 
         for i in range (1,use_trans+1) :     
             transport = st.selectbox ("%d번째로 이용한 교통수단을 선택하세요 " %i, ['버스', '택시', '배', '전동킥보드', '자전거'])
