@@ -194,7 +194,7 @@ def main() :
     sum_jeju_co2 = round(sum_jeju_co2, 2)
 
     st.header("여행에서 발생한 탄소발자국의 총 합계👣")
-    st.text("항공, 숙박, 이동수단, 휴대폰 사용, 식품 섭취에서 발생한 탄소발자국의 합입니다.(kg/CO2)")
+    st.text("항공, 숙박, 이동수단, 휴대폰 사용, 식품 섭취에서 발생한 탄소발자국의 합입니다.(kgCO2)")
     st.info(sum_jeju_co2) 
 
 if __name__ == '__main__' :	
